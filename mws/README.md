@@ -1,19 +1,21 @@
 # About the weather scripts …
 
 
-The purpose of _mito’s wx scripts (mws)_ is to display weather information in a Linux desktop status bar.  As a light alternative written in _Bash_ and for _Dzen_, it would replace _conky_ or _conky-cli_, and the text-only tool _xmobar_.
+The purpose of _mito’s wx scripts (mws)_ is to display weather information in a minimalist yet stylish Linux desktop status bar.  As a light alternative written in _Bash_ and for _Dzen_, it would replace _conky_ or _conky-cli_, and the text-only tool _xmobar_.
 
 
-There are currently are three of them, from low to high level:
+There are currently are four of them, from low to high level:
 
 * `mws.sh  ` — the most basic, comes with a small set of 20x20 px XPM icons
 
 * `mws-f.sh` — alternative layout w/ °F (Fahrenheit) scale
 
-* `mws-y.sh` — complex multi-line bar, includes the `mws-ycam.sh` widget
+* `mws-y.sh` — enhanced multi-line bar
+
+* `mws-ycam.sh` — webcam widget for `mws-y.sh`
 
 
-For details see the scripts’ comments, or the preview descriptions in my [deviantART gallery](http://mitoxd.deviantart.com/gallery/48968202/Scripting "mito's Scripting gallery").
+So far running with weather data provided by the services OpenWeatherMap, NWS/NOAA, and Yr.  Localizable the GUI into _nearly any language!_ For details see the scripts’ comments, or the preview descriptions in my [deviantART gallery](http://mitoxd.deviantart.com/gallery/48968202/Scripting "mito's Scripting gallery").
 
 
 Anyway it’s mandatory to get into grips with the _Dzen_ options and syntax!
