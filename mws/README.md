@@ -4,7 +4,7 @@
 The purpose of _mito’s wx scripts (mws)_ is to display weather information in a minimalist yet stylish Linux desktop status bar.  As a light alternative written in _Bash_ and for _Dzen_, it would replace _conky_ or _conky-cli_, and the text-only tool _xmobar_.
 
 
-There are currently are four of them, from low to high level:
+There are currently four of them, from low to high level:
 
 * `mws.sh  ` — the most basic, comes with a small set of 20x20 px XPM icons
 
