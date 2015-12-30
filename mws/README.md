@@ -12,7 +12,7 @@ There are currently four of them, from low to high level:
 
 * `mws-y.sh` — enhanced multi-line bar w/ optional dividers, webcam button in top or bottom bar, downloads and converts icons on the fly
 
-* `mws-ycam.sh` — webcam widget for `mws-y.sh`, downloads and converts webcam thumbnails on the fly
+* `mws-ycam.sh` — webcam widget for `mws-y.sh`, downloads and converts thumbnails on the fly
 
 
 So far running with weather data provided by the services OpenWeatherMap, NWS/NOAA, and Yr.  Localizable GUI into _nearly any language_! For details see the scripts’ comments, or the preview descriptions in my [deviantART gallery](http://mitoxd.deviantart.com/gallery/48968202/Scripting "mito's Scripting gallery").
