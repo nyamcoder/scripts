@@ -52,9 +52,9 @@ while [ "true" ]
 
 ###	Place Name Formatting
 #
-city1=$(echo -n "X ") 
+city1=X
 city1col="^fg(#eee8d5)"
-city2=$(echo -n "Y ")
+city2=Y
 city2col="^fg(#eee8d5)"
 
 
