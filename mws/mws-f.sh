@@ -49,9 +49,9 @@ while [ "true" ]
 
 
 
-city1="NYC"
+city1=NYC
 city1col="^fg(#eee8d5)"
-city2="Austin"
+city2=Austin
 city2col="^fg(#eee8d5)"
 
 
@@ -105,53 +105,53 @@ meltinghot="#ff2222"
 
 gettcol1() {
    if   [[ "$temp1" -le -5 ]] ; then
-      temp1col=`echo "^fg($arctic)"`
+      temp1col="^fg($arctic)"
    elif [[ "$temp1" -le 29 ]] ; then
-      temp1col=`echo "^fg($frosty)"`
+      temp1col="^fg($frosty)"
    elif [[ "$temp1" -le 39 ]] ; then
-      temp1col=`echo "^fg($cold)"`
+      temp1col="^fg($cold)"
    elif [[ "$temp1" -le 49 ]] ; then
-      temp1col=`echo "^fg($chilly)"`
+      temp1col="^fg($chilly)"
    elif [[ "$temp1" -le 59 ]] ; then
-      temp1col=`echo "^fg($moderate)"`
+      temp1col="^fg($moderate)"
    elif [[ "$temp1" -le 74 ]] ; then
-      temp1col=`echo "^fg($lukewarm)"`
+      temp1col="^fg($lukewarm)"
    elif [[ "$temp1" -le 84 ]] ; then  
-      temp1col=`echo "^fg($warm)"`
+      temp1col="^fg($warm)"
    elif [[ "$temp1" -le 94 ]] ; then
-      temp1col=`echo "^fg($hot)"`
+      temp1col="^fg($hot)"
    elif [[ "$temp1" -le 99 ]] ; then  
-      temp1col=`echo "^fg($tropic)"`     
+      temp1col="^fg($tropic)"
    elif [[ "$temp1" -gt 99 ]] ; then
-      temp1col=`echo "^fg($meltinghot)"`
+      temp1col="^fg($meltinghot)"
    else
-      temp1col=`echo "^fg()"`
+      temp1col="^fg()"
    fi
    } ; gettcol1
 
 gettcol2() {
    if   [[ "$temp2" -le -5 ]] ; then
-      temp2col=`echo "^fg($arctic)"`
+      temp2col="^fg($arctic)"
    elif [[ "$temp2" -le 29 ]] ; then
-      temp2col=`echo "^fg($frosty)"`
+      temp2col="^fg($frosty)"
    elif [[ "$temp2" -le 39 ]] ; then
-      temp2col=`echo "^fg($cold)"`
+      temp2col="^fg($cold)"
    elif [[ "$temp2" -le 49 ]] ; then
-      temp2col=`echo "^fg($chilly)"`
+      temp2col="^fg($chilly)"
    elif [[ "$temp2" -le 59 ]] ; then
-      temp2col=`echo "^fg($moderate)"`
+      temp2col="^fg($moderate)"
    elif [[ "$temp2" -le 74 ]] ; then 
-      temp2col=`echo "^fg($lukewarm)"`
+      temp2col="^fg($lukewarm)"
    elif [[ "$temp2" -le 84 ]] ; then  
-      temp2col=`echo "^fg($warm)"`
+      temp2col="^fg($warm)"
    elif [[ "$temp2" -le 94 ]] ; then
-      temp2col=`echo "^fg($hot)"`
+      temp2col="^fg($hot)"
    elif [[ "$temp2" -le 99 ]] ; then  
-      temp2col=`echo "^fg($tropic)"`     
+      temp2col="^fg($tropic)"
    elif [[ "$temp2" -gt 99 ]] ; then
-      temp2col=`echo "^fg($meltinghot)"`
+      temp2col="^fg($meltinghot)"
    else
-      temp2col=`echo "^fg()"`
+      temp2col="^fg()"
    fi
    } ; gettcol2
 
@@ -174,7 +174,7 @@ iconpath="/path/to/my/noaa-icons/XPM/"
 
 #geticon1() {
    if     [[ -z "${con1}" ]] ; then # in case for whatever reason there’s no icon ...
-      sky1=$(printf "n/a")             # ... print this string in default color
+      sky1="n/a"                    # ... print this string in default color
    else
       sky1=$(printf "^i(${iconpath}${con1}.xpm)"|tr -d '\t') # select one of the mirrored icons in all other cases
    fi
@@ -184,7 +184,7 @@ iconpath="/path/to/my/noaa-icons/XPM/"
 
 #geticon2() {
    if     [[ -z "${con2}" ]] ; then
-      sky2=$(printf "n/a")
+      sky2="n/a"
    else
       sky2=$(printf "^i(${iconpath}${con2}.xpm)"|tr -d '\t')
    fi
@@ -230,6 +230,9 @@ $ sh ~/scripts/mws/mws-f.sh &
 	For advanced overlay positioning and drawing techniques see the other script ./mws-y.sh or
 	consult the Dzen wiki. However properly overlaying centered stuff with varying size (due to changing data)
 	is nearly impossible.
+
+* Since this minimal bar is meant to be set at the top or the bottom of the screen, match dzen’s x- and y-coordinates
+	accordingly.
 
 
 * Anyway this commands might be of help:

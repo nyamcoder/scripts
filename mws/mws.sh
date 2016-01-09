@@ -225,8 +225,11 @@ done
 
 $ sh /path/to/my/mws.sh | dzen2 -p&
 
-***	You might want to adjust the default font, as well as the coloring and positioning though.
-		See the Dzen wiki for all options:
+***	However this bar is designed to be put at the top or the bottom of the screen. So you need to
+		explicitely set the x-/y-coordinates for dzen!
+
+***	You might also want to adjust the default font, as well as the coloring. See the Dzen wiki for
+		all options:
 			https://github.com/robm/dzen/wiki
 
 ***	Put the complete command including all options into your startup scripts for desktop integration.

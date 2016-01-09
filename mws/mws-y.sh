@@ -744,11 +744,14 @@ done
 
 
 
-***************** Invoke the script like so:
+*************** Invoke the script like so:
 
 $ sh ~/.scripts/mws/mws-y.sh | dzen2 -h 40 -w 340 -x 80 -y 16 -fn 'UnDotum-12' -l 4 -sa c -bg '#002b36' -fg '#eee8d5' -u -p &
 
-***************** See the Dzen wiki for all options:
+*************** Remember the script’s purpose as a top or bottom bar and match its as well as the cam-widget’s
+			coordinates.
+
+*************** See the Dzen wiki for all options:
 			https://github.com/robm/dzen/wiki
 
 			Have fun!
